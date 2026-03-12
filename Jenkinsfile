@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/sunnyajay293/jenkins-demo.git'
-            }
-        }
-
         stage('Run Script') {
             steps {
                 sh 'chmod +x hello.sh'
